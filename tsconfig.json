@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"outDir": "dist",
+		"rootDir": "src",
 		"sourceMap": true,
 		"target": "ES2022",
 		"lib": ["DOM", "DOM.Iterable", "ES2019"],

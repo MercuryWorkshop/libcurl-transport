@@ -8,9 +8,9 @@
   "license": "AGPL-3.0-only",
   "type": "module",
   "repository": {
-		"type": "git",
-		"url": "git+https://github.com/MercuryWorkshop/libcurl-transport.git"
-	},
+    "type": "git",
+    "url": "git+https://github.com/MercuryWorkshop/libcurl-transport.git"
+  },
   "scripts": {
     "build": "node esbuild.bundle.mjs",
     "prepack": "npm run build"
@@ -22,7 +22,8 @@
     "@mercuryworkshop/proxy-transports": "^1.0.2",
     "esbuild": "^0.28.2",
     "esbuild-plugin-d.ts": "^2.0.1",
-    "esbuild-plugin-umd-wrapper": "^3.0.0"
+    "esbuild-plugin-umd-wrapper": "^3.0.0",
+    "typescript": "^6.0.3"
   },
   "files": [
     "dist",
@@ -30,9 +31,9 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   }
 }
